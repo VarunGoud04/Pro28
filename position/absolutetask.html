@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute task</title>
+    <style>
+        .parent{
+            position: relative;
+            height: 500px;
+            width:500px;
+            border: 1px solid red;
+        }
+        .child1,.child2,.child3,.child4{
+            height:100px;
+            width:100px;
+            border:1px solid red;
+             position:absolute;
+             text-align: center;
+        }
+        .child1{
+            background-color:rgb(237, 77, 9);
+            left:0px;
+            top:0px;
+            text-align: center;
+        }
+        .child2{
+          background-color: yellow;
+          right:0px;
+          top:0px;
+
+        }
+        .child3{
+           background-color: green;
+           left:0px;
+           bottom:0px;
+        }
+        .child4{
+            background-color: skyblue;
+            right:0px;
+            bottom:0px;
+        }
+    </style>
+
+</head>
+<body>
+
+   <div class="parent">
+        <div class="child1">
+            <p>Child1</p>
+        </div>
+        <div class="child2">
+            <p>child2</p>
+        </div>
+        <div class="child3">
+            <p>child3</p>
+        </div>
+        <div class="child4">
+                        <p>Child4</p>
+        </div>
+    </div>
+
+</body>
+</html>

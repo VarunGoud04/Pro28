@@ -4,20 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRO 28 Registration Form </title>
+    <link rel="stylesheet" href="/css/registration.css">
 </head>
 <body>
-    <h1>Registration Form Pro 28 Classes </h1>
+    
     <form >
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
+        <fieldset>
+            <legend>Personal Information for pro 28</legend>
+            <form method="post" action="./login.html">
+        <label for="username">Username:*</label><br>
+        <input type="text" id="username" name="username" placeholder="username" required><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email">Email*:</label><br>
+        <input type="email" id="email" name="email" placeholder="email" required><br><br>
 
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" placeholder="password" required><br><br>
+        <label for="gender">Gender:</label><br>
+        <label for="male">male</label>
+        <input type="radio" id="male" name="gender"/>
+        <label for="female">female</label><br>
+        <input type="radio" id="female" name="gender"/><br><br>
+        <label for="sports">Select your favorite sports:</label><br><br>
+        <label for="football">Football:</label>
+        <input type="checkbox" id="football" name="sports" value="football"><br>
+        <label for="cricket">Cricket:</label>
+        <input type="checkbox" id="cricket" name="sports" value="cricket"><br>
+        <label for="chess">Chess:</label>
+        <input type="checkbox" id="chess" name="sports" value="chess"><br>
+        <label for="hockey">Hockey:</label> 
+        <input type="checkbox" id="hockey" name="sports" value="hockey"><br><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa"></option>
+            <option value="india">india</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+        <label>Country:</label>
+        <select multiple>  
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
 
-        <input type="submit" value="Register">
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        <input type="submit" value="Register"><br><br>
+        <input type="reset" value="Reset"><br><br>
+        <p> already have an account? <a href="login.html">Login here</a></p>
     </form>
+    </fieldset>
 </body>
 </html>
